@@ -9,18 +9,23 @@ using namespace std;
 
 void solve() {
     vector<int> v(3);
+    ll h, z, l;
     for (int i = 0; i < 3; i++) {
         cin >> v[i];
     }
-    ll h, z, l;
+    
     h = v[0];
     z = v[1];
     l = v[2];
+    
     sort(v.begin(), v.end());
-    if (v[1] == h) cout << "huguinho" << endl;
-    else if (v[1] == z) cout << "zezinho" << endl;
-    else if (v[1] == l) cout << "luisinho" << endl;
-
+    
+    if (v[1] == h) 
+        cout << "huguinho" << endl;
+    else if (v[1] == z) 
+        cout << "zezinho" << endl;
+    else if (v[1] == l) 
+        cout << "luisinho" << endl;
 }
 
 int main() {
